@@ -1,0 +1,36 @@
+@import url("../ASSETS/Author_Complete/Fonts/WEB/css/author.css");
+@import url("../ASSETS/Excon_Complete/Fonts/WEB/css/excon.css");
+
+:root {
+    /*COLORS FROM https://www.figma.com/colors/rosewater/*/
+    --slateGreyShadow:  rgba(109, 129, 150, 0.25);
+    --brickRedShadow:   rgba(192, 70, 87, 0.25);
+
+    --slateGrey:        rgba(109, 129, 150, 0.25);
+    --brickRed:         rgb(192, 70, 87);
+    --offWhite:         rgb(242, 240, 239);
+    --roseWater:        rgb(255, 214, 209);
+    
+
+
+    /*AUTHOR FONTS*/
+    --Author-Light:         'Author-Light';
+    --Author-LightItalic:   'Author-LightItalic';
+
+    --Author-Regular:       'Author-Regular';
+    --Author-Italic:        'Author-Italic';
+
+    --Author-Medium:        'Author-Medium';
+    --Author-MediumItalic:  'Author-MediumItalic';
+
+
+
+    /*EXCON FONTS*/
+    --Excon-Thin:     "Excon-Thin";
+    --Excon-Light:    "Excon-Light";
+    --Excon-Regular:  "Excon-Regular";
+    --Excon-Medium:   "Excon-Medium";
+    --Excon-Bold:     "Excon-Bold";
+    --Excon-Black:    "Excon-Black";
+    --Excon-Variable: "Excon-Variable";
+}

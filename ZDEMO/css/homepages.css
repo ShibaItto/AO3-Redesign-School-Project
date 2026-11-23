@@ -1,0 +1,96 @@
+@import url(variables.css);
+
+/*https://www.w3schools.com/cssref/css3_pr_background.php ~ for background property*/
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 65px;
+
+    padding: 0 10px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+
+    background-color: white;
+    font-family: var(--Excon-Regular);
+    border-bottom: 1px solid var(--slateGreyShadow);
+}
+
+.header-logo {
+    height: 100%;
+    width: auto;
+    padding: 15px;
+    background-color: red;
+}
+
+.header-logo img {
+    height: 100%;
+    width: auto;
+    flex-shrink: 0;
+}
+
+#menu-button {
+    position:absolute;
+    visibility: 0;
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: blueviolet;
+}
+
+.menu > .dropdown {
+    left: 0;
+    top: 100%;
+    visibility: hidden;
+    max-width: 0;
+    opacity: 0;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0 0 20px 10px var(--slateGreyShadow);
+    transition: opacity 0.2s ease;
+}
+
+.menu-button:hover + .dropdown,
+.menu-button:focus + .dropdown,
+.menu > .dropdown:hover,
+.menu > .dropdown:focus-within {
+    visibility: visible;
+    max-width: fit-content;
+    opacity: 1;
+}
+
+.menu-button {
+    padding: 10px 20px;
+}
+
+.header-nav {
+    display: flex;
+    flex: 1;
+}
+
+.search-container {
+    display: flex;
+}
+#advance-dropdown {
+    visibility: 0;
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+}
+
+
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+}

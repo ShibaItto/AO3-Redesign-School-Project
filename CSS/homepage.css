@@ -1,0 +1,99 @@
+@import url(variables.css);
+
+header {
+    position: sticky;
+    top: 0; 
+    z-index: 1;
+    width: 100%;    
+    height: 65px; 
+    padding: 0 10px;
+    display: flex;  
+    gap: 10px; 
+    align-items: stretch; 
+    justify-content: space-between; 
+
+    background-color: white; 
+    font-family: var(--Excon-Regular); 
+    border-bottom: 1px solid var(--slateGreyShadow);
+}
+    .header-logo {
+        height: 100%; 
+        width: auto;
+        padding: 15px;
+        background-color: red;
+    }
+        .header-logo img {
+            height: 100%;   
+            width: auto;
+            flex-shrink: 0;
+        }
+
+
+#menu-button {
+    position:absolute;
+    visibility: 0;
+    max-width: 0;
+    opacity: 0;
+}
+
+#menu-dropdown {
+    display: flex;
+    flex: 1;
+}
+
+#menu-dropdown:hover #menu-dropdown,
+#menu-dropdown:focus #menu-dropdown,
+#menu-dropdown:hover,
+#menu-dropdown:focus-within {
+    visibility: 0;
+    max-width: 0;
+    opacity: 0;
+}
+
+.menu-container {
+    background-color: red;
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.menu {
+    background-color: green;
+    display:flex;
+    align-items: center;
+}
+
+.menu-button {
+    padding: 10px 20px;
+}
+
+
+
+
+.search-container {
+    display: flex;
+}
+#advance-dropdown {
+    visibility: 0;
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+}
+
+#menu-dropdown:hover #menu-dropdown,
+#menu-dropdown:focus #menu-dropdown,
+#menu-dropdown:hover,
+#menu-dropdown:focus-within {
+    visibility: 0;
+    max-width: 0;
+    opacity: 0;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    visibility: hidden;
+    max-width: 0;
+    max-height: 0;
+    opacity: 0;
+}
